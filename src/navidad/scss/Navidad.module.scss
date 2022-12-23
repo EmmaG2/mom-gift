@@ -1,0 +1,16 @@
+.navidad-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+  align-items: center;
+  min-height: 90vh;
+
+  div {
+    margin-top: 1em;
+    position: relative;
+    z-index: 2;
+    bottom: 0;
+  }
+}

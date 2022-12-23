@@ -1,0 +1,9 @@
+$circle-width: 300px;
+
+.box {
+  position: absolute;
+  left: 0;
+  right: 1rem;
+  width: $circle-width;
+  height: $circle-width;
+}

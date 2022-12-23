@@ -1,0 +1,12 @@
+.btn {
+  background-color: #ff2a2a;
+  border: none;
+  padding: 1em 2em;
+  color: #fff;
+  border-radius: 7px;
+  transition: background-color 200ms ease-in-out;
+
+  &:active {
+    background-color: #8508e5;
+  }
+}
