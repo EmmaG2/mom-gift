@@ -10,17 +10,17 @@ export const NavidadPage = () => {
   const { showModal } = useSelector(selectNavidadState);
 
   useEffect(() => {
-    var duration = 100 * 1000;
-    var animationEnd = Date.now() + duration;
-    var skew = 5;
+    const duration = 100 * 1000;
+    const animationEnd = Date.now() + duration;
+    let skew = 5;
 
     function randomInRange(min: number, max: number) {
       return Math.random() * (max - min) + min;
     }
 
     (function frame() {
-      var timeLeft = animationEnd - Date.now();
-      var ticks = Math.max(200, 500 * (timeLeft / duration));
+      let timeLeft = animationEnd - Date.now();
+      let ticks = Math.max(200, 500 * (timeLeft / duration));
       skew = Math.max(0.8, skew - 0.001);
 
       confetti({
