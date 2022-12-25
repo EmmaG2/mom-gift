@@ -64,14 +64,16 @@ export const Modal = () => {
           style={{
             display: "flex",
             justifyContent: "center",
+            marginTop: "1em",
+            marginBottom: "1em",
             width: "100%",
           }}
         >
           <LazyLoadImage
             style={{
               borderRadius: "50%",
-              margin: "1em",
             }}
+            effect="opacity"
             width={"250px"}
             height="250px"
             src="/mom.jpg"
