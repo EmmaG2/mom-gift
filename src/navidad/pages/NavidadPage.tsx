@@ -9,6 +9,10 @@ import { selectNavidadState } from "../../redux/navidad";
 export const NavidadPage = () => {
   const { showModal } = useSelector(selectNavidadState);
 
+  const onDispatchConfetti = () => {
+    return {};
+  };
+
   useEffect(() => {
     const duration = 100 * 1000;
     const animationEnd = Date.now() + duration;
@@ -56,7 +60,7 @@ export const NavidadPage = () => {
           marginTop: "3em",
         }}
       >
-        <Button />
+        <Button onConfetti={onDispatchConfetti} />
       </div>
     </section>
   );
