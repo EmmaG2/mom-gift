@@ -4,6 +4,7 @@ import { Button } from "./Button";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Tittle } from "./Tittle";
 import confetti from "canvas-confetti";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export const Modal = () => {
   const onDispatchConfetti = () => {
@@ -64,14 +65,16 @@ export const Modal = () => {
           style={{
             display: "flex",
             justifyContent: "center",
+            marginTop: "1em",
+            marginBottom: "1em",
             width: "100%",
           }}
         >
           <LazyLoadImage
             style={{
               borderRadius: "50%",
-              margin: "1em",
             }}
+            effect="blur"
             width={"250px"}
             height="250px"
             src="/mom.jpg"
