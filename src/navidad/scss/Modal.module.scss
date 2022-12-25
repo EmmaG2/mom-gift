@@ -1,5 +1,6 @@
 .modal-container {
   position: absolute;
+  top: 0;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -11,7 +12,8 @@
 }
 
 .modal-container__title {
-  color: #48e;
+  color: #ff2a2a;
+  font-family: "Satisfy", sans-serif;
 }
 
 .modal-container__item {
@@ -19,7 +21,6 @@
   background-color: #fff;
   padding: 1em;
   border-radius: 6px;
-  // min-height: 240px;
-  max-height: 380px;
+  max-height: 30rem;
   overflow-y: auto;
 }
