@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Button, HomeWrapper, Modal } from "../components";
 import styles from "../scss/Navidad.module.scss";
 
